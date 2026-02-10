@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <defs>
+    <linearGradient id="cb1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a3520"/>
+      <stop offset="100%" stop-color="#2a2818"/>
+    </linearGradient>
+  </defs>
+  <!-- Film frame background -->
+  <rect width="320" height="200" fill="url(#cb1)" rx="4"/>
+  <!-- Perforations left -->
+  <rect x="4" y="10" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="4" y="40" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="4" y="70" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="4" y="100" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="4" y="130" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="4" y="160" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <!-- Perforations right -->
+  <rect x="306" y="10" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="306" y="40" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="306" y="70" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="306" y="100" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="306" y="130" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <rect x="306" y="160" width="10" height="14" rx="2" fill="#1a1a1a" opacity="0.6"/>
+  <!-- Scene area with yellow/green color cast -->
+  <rect x="24" y="20" width="272" height="160" rx="2" fill="#5a5825"/>
+  <!-- Strong yellow-green color cast overlay -->
+  <rect x="24" y="20" width="272" height="160" rx="2" fill="#8a9020" opacity="0.25"/>
+  <!-- Scene elements with wrong tint -->
+  <circle cx="110" cy="70" r="18" fill="#7a8030" opacity="0.5"/>
+  <circle cx="200" cy="75" r="15" fill="#6a7028" opacity="0.5"/>
+  <rect x="70" y="115" width="80" height="65" rx="3" fill="#5a6020" opacity="0.45"/>
+  <rect x="180" y="110" width="70" height="70" rx="3" fill="#5a6020" opacity="0.45"/>
+  <!-- Sky area with wrong color -->
+  <rect x="24" y="20" width="272" height="50" rx="2" fill="#6a7530" opacity="0.3"/>
+  <!-- Green tint visible -->
+  <rect x="24" y="20" width="272" height="160" rx="2" fill="#40600a" opacity="0.1"/>
+</svg>

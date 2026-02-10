@@ -271,6 +271,16 @@
       <div class="comparison-grid">
         <div class="comparison-card fade-in">
           <div class="comparison-label">Flicker</div>
+          <div class="comparison-images">
+            <div class="comparison-img-wrapper">
+              <span class="comparison-img-tag">Prima</span>
+              <img src="img/flicker-before.svg" alt="Frame con sfarfallio evidente" width="320" height="200" loading="lazy">
+            </div>
+            <div class="comparison-img-wrapper">
+              <span class="comparison-img-tag comparison-img-tag--after">Dopo</span>
+              <img src="img/flicker-after.svg" alt="Frame con sfarfallio ridotto" width="320" height="200" loading="lazy">
+            </div>
+          </div>
           <div class="comparison-body">
             <div class="comparison-before">Sfarfallio evidente</div>
             <div class="comparison-arrow">→</div>
@@ -279,6 +289,16 @@
         </div>
         <div class="comparison-card fade-in">
           <div class="comparison-label">Stabilizzazione</div>
+          <div class="comparison-images">
+            <div class="comparison-img-wrapper">
+              <span class="comparison-img-tag">Prima</span>
+              <img src="img/stabilize-before.svg" alt="Frame con tremolio da ripresa a mano" width="320" height="200" loading="lazy">
+            </div>
+            <div class="comparison-img-wrapper">
+              <span class="comparison-img-tag comparison-img-tag--after">Dopo</span>
+              <img src="img/stabilize-after.svg" alt="Frame stabilizzato con leggero crop" width="320" height="200" loading="lazy">
+            </div>
+          </div>
           <div class="comparison-body">
             <div class="comparison-before">Tremolio mano</div>
             <div class="comparison-arrow">→</div>
@@ -287,6 +307,16 @@
         </div>
         <div class="comparison-card fade-in">
           <div class="comparison-label">Denoise</div>
+          <div class="comparison-images">
+            <div class="comparison-img-wrapper">
+              <span class="comparison-img-tag">Prima</span>
+              <img src="img/denoise-before.svg" alt="Frame con grana, rumore e sporco" width="320" height="200" loading="lazy">
+            </div>
+            <div class="comparison-img-wrapper">
+              <span class="comparison-img-tag comparison-img-tag--after">Dopo</span>
+              <img src="img/denoise-after.svg" alt="Frame più pulito dopo denoise leggero" width="320" height="200" loading="lazy">
+            </div>
+          </div>
           <div class="comparison-body">
             <div class="comparison-before">Grana/rumore + sporco</div>
             <div class="comparison-arrow">→</div>
@@ -295,6 +325,16 @@
         </div>
         <div class="comparison-card fade-in">
           <div class="comparison-label">Colore</div>
+          <div class="comparison-images">
+            <div class="comparison-img-wrapper">
+              <span class="comparison-img-tag">Prima</span>
+              <img src="img/color-before.svg" alt="Frame con dominante gialla e verde" width="320" height="200" loading="lazy">
+            </div>
+            <div class="comparison-img-wrapper">
+              <span class="comparison-img-tag comparison-img-tag--after">Dopo</span>
+              <img src="img/color-after.svg" alt="Frame con tinte naturali e bilanciate" width="320" height="200" loading="lazy">
+            </div>
+          </div>
           <div class="comparison-body">
             <div class="comparison-before">Dominante gialla/verde</div>
             <div class="comparison-arrow">→</div>
@@ -452,7 +492,7 @@
       <p class="booking-subtitle fade-in">Due percorsi, un unico obiettivo: preservare le tue pellicole.</p>
       <div class="booking-ctas fade-in">
         <a href="funnel.html" class="btn btn-primary">Prenota digitalizzazione</a>
-        <a href="funnel.html#checkup" class="btn btn-secondary" style="border-color: var(--carbon-black); color: var(--carbon-black);">Prenota check-up</a>
+        <a href="funnel.html#checkup" class="btn btn-secondary">Prenota check-up</a>
       </div>
       <p class="booking-info fade-in">
         <strong>Area servita: Palermo (solo consegna locale)</strong><br>
@@ -487,7 +527,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> Filmina — Palermo</p>
+        <p>&copy; <span id="currentYear"></span> Filmina — Palermo</p>
       </div>
     </div>
   </footer>

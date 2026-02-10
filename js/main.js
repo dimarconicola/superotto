@@ -66,6 +66,10 @@ const observerOptions = {
   rootMargin: '0px 0px -40px 0px'
 };
 
+// ===== Footer Year =====
+const yearEl = document.getElementById('currentYear');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
