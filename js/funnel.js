@@ -12,6 +12,9 @@ const state = {
 };
 
 // ===== Pricing Data =====
+const PRICE_PER_MIN_OVER_300 = 1.10;
+const CLEAN_PRICE_PER_MIN_OVER_300 = 0.90;
+
 const tiers = [
   { min: 0, max: 30, price: 80, clean: 50, advance: 20, label: '0–30 min' },
   { min: 31, max: 60, price: 120, clean: 80, advance: 30, label: '31–60 min' },
@@ -19,7 +22,7 @@ const tiers = [
   { min: 121, max: 180, price: 250, clean: 190, advance: 50, label: '121–180 min' },
   { min: 181, max: 240, price: 300, clean: 230, advance: 60, label: '181–240 min' },
   { min: 241, max: 300, price: 350, clean: 270, advance: 70, label: '241–300 min' },
-  { min: 301, max: Infinity, price: null, clean: null, advance: 80, label: '300+ min', perMin: 1.10, cleanPerMin: 0.90 }
+  { min: 301, max: Infinity, price: null, clean: null, advance: 80, label: '300+ min', perMin: PRICE_PER_MIN_OVER_300, cleanPerMin: CLEAN_PRICE_PER_MIN_OVER_300 }
 ];
 
 const riskLabels = {
