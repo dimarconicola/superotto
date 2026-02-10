@@ -296,9 +296,14 @@ function showResult() {
       resultDigitize.style.display = 'block';
       const details = document.getElementById('resultDetails');
       if (details && state.tier) {
+        let basePrice = state.tier.price !== null
+          ? state.tier.price
+          : Math.round(state.estimatedMinutes * state.tier.perMin);
         const priceLabel = state.tier.price !== null
           ? `€${state.tier.price}`
-          : `~€${Math.round(state.estimatedMinutes * state.tier.perMin)}`;
+          : `~€${basePrice}`;
+
+        let total = basePrice;
 
         let html = `
           <div class="detail-row"><span>Minuti stimati</span><span>~${state.estimatedMinutes}</span></div>
@@ -307,18 +312,31 @@ function showResult() {
         `;
 
         if (state.addons.includes('clean')) {
+          const cleanValue = state.tier.clean !== null
+            ? state.tier.clean
+            : Math.round(state.estimatedMinutes * state.tier.cleanPerMin);
           const cleanLabel = state.tier.clean !== null
             ? `+€${state.tier.clean}`
-            : `~+€${Math.round(state.estimatedMinutes * state.tier.cleanPerMin)}`;
+            : `~+€${cleanValue}`;
           html += `<div class="detail-row"><span>Clean+</span><span>${cleanLabel}</span></div>`;
+          total += cleanValue;
         }
         if (state.addons.includes('master')) {
           html += `<div class="detail-row"><span>Master Export</span><span>+€30</span></div>`;
+          total += 30;
         }
         if (state.addons.includes('drive')) {
           html += `<div class="detail-row"><span>Nostro disco</span><span>+€15</span></div>`;
+          total += 15;
+        }
+        if (state.addons.includes('urgenza')) {
+          const urgencyAmount = Math.round(total * 0.25);
+          html += `<div class="detail-row"><span>Urgenza (+25%)</span><span>+€${urgencyAmount}</span></div>`;
+          total += urgencyAmount;
         }
 
+        const approx = state.tier.price === null ? '~' : '';
+        html += `<div class="detail-row"><span>Totale stimato</span><span>${approx}€${total}</span></div>`;
         html += `<div class="detail-row"><span>Anticipo</span><span>€${state.tier.advance}</span></div>`;
         details.innerHTML = html;
       }

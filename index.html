@@ -13,6 +13,8 @@
 </head>
 <body>
 
+  <a href="#hero" class="skip-link">Vai al contenuto principale</a>
+
   <!-- ===== Navigation ===== -->
   <nav class="navbar" role="navigation" aria-label="Navigazione principale">
     <div class="container">
@@ -417,6 +419,32 @@
     </div>
   </section>
 
+  <!-- ===== Tempi di consegna ===== -->
+  <section class="section tempi" id="tempi">
+    <div class="container">
+      <h2 class="section-title fade-in">Tempi di consegna indicativi</h2>
+      <p class="section-subtitle fade-in">Dal ricevimento delle bobine alla consegna dei file, in base ai minuti totali.</p>
+      <div class="tempi-grid">
+        <div class="tempo-card fade-in">
+          <div class="tempo-range">0–60 min</div>
+          <div class="tempo-days">3–7 giorni</div>
+          <div class="tempo-note">Scansione + controllo qualità + consegna</div>
+        </div>
+        <div class="tempo-card fade-in">
+          <div class="tempo-range">61–180 min</div>
+          <div class="tempo-days">7–14 giorni</div>
+          <div class="tempo-note">Scansione + controllo qualità + consegna</div>
+        </div>
+        <div class="tempo-card fade-in">
+          <div class="tempo-range">180+ min</div>
+          <div class="tempo-days">Su pianificazione</div>
+          <div class="tempo-note">Urgenza disponibile se confermata</div>
+        </div>
+      </div>
+      <p class="tempi-disclaimer fade-in">I tempi possono variare in base alla coda di lavorazione. Confermati all'accettazione.</p>
+    </div>
+  </section>
+
   <!-- ===== Booking CTA ===== -->
   <section class="section booking" id="prenota">
     <div class="container">
@@ -453,14 +481,13 @@
         <div>
           <h4>Legale</h4>
           <ul>
-            <li><a href="#">Termini di servizio</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Contatti</a></li>
+            <li><a href="termini.html">Termini di servizio</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Filmina — Palermo</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Filmina — Palermo</p>
       </div>
     </div>
   </footer>
